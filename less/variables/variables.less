@@ -1,0 +1,73 @@
+//colors
+@color-red: #ff0000;
+@color-black: #000;
+@color-white: #fff;
+@color-grey1: #f3f4f6;
+@color-grey2: #e9ecf1;
+@color-grey3: #ccc;
+@primary__blue1: #7bb7f3;
+@primary__color1: #0049b0;
+@primary__color2: #0035b0;
+@twitter-color: #00acee;
+@pinterest-color: #e81b22;
+@facebook-color: #157dc3;
+@success__color1: #34bf48;
+@success__color2: #349748;
+@info__color1: #6ccdf9;
+@info__color2: #6cc3f9;
+@warning__color1: #f4999e;
+@warning__color2: #f4829e;
+@danger__color1: #ed1b24;
+@danger__color2: #d20124;
+@instagram-gradient-color1: #f09433;
+@instagram-gradient-color2: #e6683c;
+@instagram-gradient-color3: #dc2743;
+@instagram-gradient-color4: #cc2366;
+@instagram-gradient-color5: #bc1888;
+//my colors
+@color-solitude: #f4f5f7;
+@color-cobalt : #0049b0;
+@color-dark-grey: #eaecf0;
+@color-rose:#f49a9e;
+@color-light-grey:#a7a7a7;
+
+// indents
+@indent__base: 20px;
+@indent__xl: @indent__base * 2; // 40px
+@indent__l: @indent__base * 1.5; // 30px
+@indent__m: @indent__base * 1.25; // 25px
+@indent__s: @indent__base / 2; // 10px
+@indent__xs: @indent__base / 4; // 5px
+
+// Weights
+@font-weight__light: 300;
+@font-weight__heavier: 500;
+@font-weight__bold: 700;
+
+//  Sizes
+@root__font-size: 62.5%; // Defines ratio between root font size and base font size, 1rem = 10px
+@font-size-ratio__base: 1.4; // Defines ratio of the root font-size to the base font-size
+
+
+@font-size__base: 14px;
+@font-size__xxl: ceil(2 * @font-size__base); // 28px
+@font-size__xl: ceil(1.5 * @font-size__base); // 21px
+@font-size__l: ceil(1.25 * @font-size__base); // 18px
+@font-size__s: ceil(.90 * @font-size__base); // 13px
+@font-size__xs: floor(.85 * @font-size__base); // 11px
+
+@font-face {
+    font-family: 'Roboto Light';
+    src: url('fonts/Roboto-Light.eot');
+    src: url('fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Roboto-Light.woff2') format('woff2'),                  /* Новейшие браузеры */
+    url('fonts/Roboto-Light.woff') format('woff'),                    /* Новые браузеры и IE9+ */
+    url('fonts/Roboto-Light.ttf')  format('ttf'),                /* Старые Safari, Android, iOS */
+    url('fonts/Roboto-Light.svg#svgFontName') format('svg');          /* Древние Safari, iOS, Android */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-size-unit-convert: true;
+@font-size-unit: rem;
+@font-size-unit-ratio: unit(@root__font-size * 16/100);

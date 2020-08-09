@@ -1,0 +1,416 @@
+@media (max-width: 767px) {
+    .karusel {
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .owl-nav {
+        button {
+            .lib-font-size(40);
+            bottom: 150px;
+            position: absolute;
+
+            &:focus {
+                border: none;
+                color: @primary__color1;
+                outline: none;
+            }
+        }
+
+        .owl-prev {
+            bottom: 75px;
+            left: -70px;
+
+            span {
+                .lib-font-size(35);
+                border: 1px solid black;
+                padding: 0 @indent__base 7px @indent__base;
+            }
+
+            &:hover {
+                border: none;
+                color: @primary__color1;
+                cursor: pointer;
+            }
+        }
+
+        .owl-next {
+            top: 70px;
+            right: -40px;
+
+            span {
+                .lib-font-size(35);
+                border: 1px solid @black;
+                padding: 0 @indent__base 7px @indent__base;
+            }
+
+            &:hover {
+                border: none;
+                color: @primary__color1;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .owl-theme .owl-dots .owl-dot {
+        display: none;
+    }
+
+    .thumb {
+        .lib-css(display, flex, 1);
+        .lib-css(align-items, center, 1);
+        background-color: transparent;
+        border: none;
+    }
+
+    .div-owl {
+        .lib-css(display, flex, 1);
+        .lib-css(align-items, center, 1);
+        .lib-css(justify-content, center, 1);
+
+        img {
+            width: 75%;
+            border-radius: 50%;
+        }
+
+        button {
+            .lib-css(justify-content, center, 1);
+            width: 100px;
+            outline: none;
+        }
+    }
+
+    .owl-carousel {
+        .owl-item {
+            .item {
+                margin: 0 @indent__xs;
+                .lib-css(display, flex, 1);
+                .lib-css(justify-content, center, 1);
+
+                .content-wrapper {
+                    .lib-css(display, flex, 1);
+                    margin: @indent__base 0;
+                    border: 1px solid black;
+                    .lib-css(flex-wrap, wrap, 1);
+
+                    .img-wrapper {
+                        .lib-css(display, flex, 1);
+                        .lib-css(justify-content, center, 1);
+                        .lib-css(align-items, center, 1);
+                        padding-top: @indent__base;
+                    }
+                }
+
+                img {
+                    position: static;
+                    border-radius: 50%;
+                    width: 70%;
+                }
+
+                .slider-text {
+                    .lib-css(display, flex, 1);
+                    .lib-css(flex-direction, column, 1);
+                    .lib-css(align-items, flex-start, 1);
+                    padding: 15px;
+                    width: 100%;
+
+                    span {
+                        color: @color-light-grey;
+                    }
+
+                    h2 {
+                        padding-top: 15px;
+                        font-weight: @font-weight__bold;
+                        .lib-font-size(15);
+                    }
+
+                    h3 {
+                        .lib-font-size(10);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .karusel {
+        margin: 0 auto;
+        width: 70%;
+
+        .owl-out {
+            .owl-carousel {
+                .owl-nav {
+                    .owl-prev,
+                    .owl-next {
+                        &:hover {
+                            background-color: @white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .owl-nav {
+        button {
+            .lib-font-size(40);
+            bottom: 150px;
+            position: absolute;
+
+            &:focus {
+                border: none;
+                color: @primary__color1;
+                outline: none;
+            }
+        }
+
+        .owl-prev {
+            bottom: 75px;
+            left: -70px;
+
+            span {
+                .lib-font-size(35);
+                border: 1px solid @black;
+                padding: 0 @indent__base 7px @indent__base;
+            }
+
+            &:hover {
+                border: none;
+                color: @primary__color1;
+                cursor: pointer;
+            }
+        }
+
+        .owl-next {
+            top: 70px;
+            right: -40px;
+
+            span {
+                .lib-font-size(35);
+                border: 1px solid black;
+                padding: 0 @indent__base 7px @indent__base;
+            }
+
+            &:hover {
+                border: none;
+                color: @primary__color1;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .owl-theme .owl-dots .owl-dot {
+        display: none;
+    }
+
+    .thumb {
+        .lib-css(display, flex, 1);
+        .lib-css(align-items, center, 1);
+        background-color: transparent;
+        border: none;
+    }
+
+    .div-owl {
+        .lib-css(display, flex, 1);
+        .lib-css(align-items, center, 1);
+        .lib-css(justify-content, center, 1);
+
+        img {
+            width: 75%;
+            border-radius: 50%;
+        }
+
+        button {
+            width: 100px;
+            .lib-css(justify-content, center, 1);
+            outline: none;
+        }
+    }
+
+    .div-huiv {
+        .lib-css(display, flex, 1);
+    }
+
+    .owl-carousel {
+        .owl-item {
+            .item {
+                .lib-css(display, flex, 1);
+                .lib-css(justify-content, center, 1);
+                margin: 0 5px;
+
+                .content-wrapper {
+                    .lib-css(display, flex, 1);
+                    margin: @indent__base 0;
+                    border: 1px solid @black;
+                }
+
+                img {
+                    position: absolute;
+                    border-radius: 50%;
+                    left: 30px;
+                    width: 32%;
+                    top: 27px;
+                }
+
+                .slider-text {
+                    .lib-css(display, flex, 1);
+                    .lib-css(flex-direction, column, 1);
+                    .lib-css(align-items, flex-start, 1);
+                    padding: 15px 15px 15px 245px;
+                    width: 100%;
+
+                    span {
+                        color: @color-light-grey;
+                    }
+
+                    h2 {
+                        .lib-font-size(15);
+                        padding-top: 15px;
+                        font-weight: @font-weight__bold;
+                    }
+
+                    h3 {
+                        .lib-font-size(10);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .karusel {
+        margin: 0 auto;
+        width: 40%;
+
+        .owl-carousel {
+            .owl-nav {
+                button {
+                    .lib-font-size(40);
+                    bottom: 150px;
+                    position: absolute;
+
+                    &:focus {
+                        border: none;
+                        color: @primary__color1;
+                        outline: none;
+                    }
+                }
+
+                .owl-prev {
+                    bottom: 75px;
+                    left: -70px;
+
+                    span {
+                        .lib-font-size(35);
+                        border: 1px solid @black;
+                        padding: 0 @indent__base 7px @indent__base;
+                    }
+
+                    &:hover {
+                        border: none;
+                        color: @black;
+                        cursor: pointer;
+                    }
+                }
+
+                .owl-next {
+                    bottom: 80px;
+                    right: -72px;
+
+                    span {
+                        .lib-font-size(35);
+                        border: 1px solid @black;
+                        padding: 0 @indent__base 7px @indent__base;
+                    }
+
+                    &:hover {
+                        border: none;
+                        color: @black;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .owl-theme .owl-dots .owl-dot {
+            display: none;
+        }
+
+        .thumb {
+            .lib-css(display, flex, 1);
+            .lib-css(align-items, center, 1);
+            background-color: transparent;
+            border: none;
+        }
+
+        .div-owl {
+            .lib-css(display, flex, 1);
+            .lib-css(align-items, center, 1);
+            .lib-css(justify-content, center, 1);
+
+            img {
+                width: 75%;
+                border-radius: 50%;
+
+                &:hover {
+                    border: 2px solid @blue;
+                }
+            }
+
+            button {
+                width: 100px;
+                .lib-css(justify-content, center, 1);
+                outline: none;
+            }
+        }
+
+        .owl-carousel {
+            .owl-item {
+                .item {
+                    .lib-css(display, flex, 1);
+                    .lib-css(justify-content, center, 1);
+                    margin: 0 @indent__xs;
+
+                    .content-wrapper {
+                        .lib-css(display, flex, 1);
+                        margin: @indent__base 0;
+                        border: 1px solid @black;
+                    }
+
+                    img {
+                        position: absolute;
+                        width: 38%;
+                        border-radius: 50%;
+                        top: 11px;
+                        left: 30px;
+                    }
+
+                    .slider-text {
+                        .lib-css(display, flex, 1);
+                        .lib-css(flex-direction, column, 1);
+                        .lib-css(align-items, flex-start, 1);
+                        padding: 15px 15px 15px 250px;
+                        width: 100%;
+
+                        span {
+                            color: @color-light-grey;
+                        }
+
+                        h2 {
+                            .lib-font-size(15);
+                            padding-top: 15px;
+                            font-weight: @font-weight__bold;
+                        }
+
+                        h3 {
+                            .lib-font-size(10);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

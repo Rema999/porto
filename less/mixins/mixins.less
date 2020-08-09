@@ -1,0 +1,104 @@
+.round-borders(@radius) {
+  border-radius: @radius;
+}
+
+.color(@color) {
+  color: @color;
+}
+
+.background(@color) {
+  background-color: @color;
+}
+
+.display(@properties) {
+  display: @properties;
+}
+
+.flex-direction(@properties) {
+  flex-direction: @properties;
+}
+
+.justify-content(@properties) {
+  justify-content: @properties;
+}
+
+.align-items(@properties) {
+  align-items: @properties;
+}
+
+.flex-wrap(@properties) {
+  flex-wrap: @properties;
+}
+
+
+.button(@bg__color, @color, @hover_color) {
+  .round-borders(2px);
+  .background(@bg__color);
+  .color(@color);
+  font-size: @font-size__xs;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  padding: @indent__s @indent__base;
+  margin: 0 10px;
+
+  &:hover {
+    .background(@hover_color);
+    .color(@color);
+    transition: 0.5s ease-out;
+  }
+}
+.lib-css(
+  @_property,
+  @_value,
+  @_prefix: 0
+) when (@_prefix = 1)
+  and not (@_value = '')
+  and not (@_value = false)
+  and not (extract(@_value, 1) = false)
+  and not (extract(@_value, 2) = false)
+  and not (extract(@_value, 3) = false)
+  and not (extract(@_value, 4) = false)
+  and not (extract(@_value, 5) = false) {
+  -webkit-@{_property}: @_value;
+  -moz-@{_property}: @_value;
+  -ms-@{_property}: @_value;
+}
+
+.lib-css(
+  @_property,
+  @_value,
+  @_prefix: 0
+) when not (@_value = '')
+  and not (@_value = false)
+  and not (extract(@_value, 1) = false)
+  and not (extract(@_value, 2) = false)
+  and not (extract(@_value, 3) = false)
+  and not (extract(@_value, 4) = false)
+  and not (extract(@_value, 5) = false) {
+    @{_property}: @_value;
+}
+.lib-font-size-value(
+  @_value
+) when not (@_value = false) and not (@_value = '') and (@font-size-unit-convert) {
+  @fontValue: unit(((@_value) * 1), @font-size-unit) / @font-size-unit-ratio;
+}
+.lib-font-size-value(
+  @_value
+) when (@font-size-unit-convert = false) {
+  @fontValue: @_value;
+}
+
+//  Rem font size
+.lib-font-size(@sizeValue) when not (ispercentage(@sizeValue)) and not (@sizeValue = false) and (isunit(@sizeValue, @font-size-unit)) {
+  .lib-css(font-size, @sizeValue);
+}
+
+.lib-font-size(@sizeValue) when not (ispercentage(@sizeValue)) and not (@sizeValue = false) and (isunit(@sizeValue, em)) {
+  .lib-css(font-size, @sizeValue);
+}
+
+.lib-font-size(@sizeValue) when not (ispercentage(@sizeValue)) and not (@sizeValue = false) and not (isunit(@sizeValue, em)) and not (isunit(@sizeValue, @font-size-unit)) {
+  .lib-font-size-value(@sizeValue);
+  .lib-css(font-size, @fontValue);
+}
