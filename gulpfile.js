@@ -5,6 +5,8 @@ const sourcemaps = require('gulp-sourcemaps');
 const path = require('path');
 const del = require('del');
 const browserSync = require('browser-sync');
+var uglify = require('gulp-uglify');
+var pipeline = require('readable-stream').pipeline;
 
 var ghPages = require('gulp-gh-pages');
 
@@ -40,11 +42,18 @@ function clean() {
     return del(['css/*'])
 }
 
+
+gulp.task('compress', function () {
+    return pipeline(
+        gulp.src('lib/*.js'),
+        uglify(),
+        gulp.dest('dist')
+    );
+});
 gulp.task('deploy', function() {
     return gulp.src('./build/**/*')
         .pipe(ghPages());
 });
 gulp.task('less', less);
 gulp.task('watch', watch);
-
 gulp.task('build', gulp.series(clean, less))
