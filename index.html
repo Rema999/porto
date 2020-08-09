@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeQqYyErm-SVqNMxbatDsDR7lhyP8YU0A&callback=initMap&libraries=&v=weekly"
+            defer
+    ></script>
+    <script src="./javaScript/map.js"></script>
+</head>
+<body>
+
+<div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div class="tablet-menu">
+                    <div class="burger"><p class="open-list"><i class="fas fa-bars"></i></p></div>
+                    <div class="cross"><p class="close-list none"><i class="fas fa-times"></i></p></div>
+                    <div class="image-wrapper"><img src="images/logo.jpg" class="img-logo"></div>
+                    <div class="search-mobile">
+                        <span class="open-search"><i class="fas fa-search"></i></span>
+                        <span class="close-search"><i class="fas fa-times"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 ">
+                <div class="hide-form">
+                    <form action="#" class="form">
+                        <input class="search-field" type="text" placeholder="Search...">
+                        <div class="search">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="navigation">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <ul class="list tablet-list">
+                    <li class="list-li home">home</li>
+                    <li class="list-li services">services</li>
+                    <li class="list-li portfolio">portfolio</li>
+                    <li class="list-li gallery">gallery</li>
+                    <li class="list-li help">help & faq</li>
+                    <li class="list-li about">about</li>
+                    <li class="list-li danger">contact</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main class="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title-wrapper">
+                    <h2>Buttons</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="buttons-wrapper">
+                    <button type="button" class="btn btn-primary all-buttons">Primary</button>
+                    <button type="button" class="btn btn-outline-primary all-buttons">Default</button>
+                    <button type="button" class="btn btn-success all-buttons">Success</button>
+                    <button type="button" class="btn btn-info all-buttons">Info</button>
+                    <button type="button" class="btn btn-warning all-buttons">Warning</button>
+                    <button type="button" class="btn btn-danger all-buttons">Danger</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title-wrapper">
+                    <h2>Inputs</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="inputs">
+                    <ul class="inputs-ul">
+                        <li class="inputs-li">
+                            <input type="checkbox" class="inputs-checkbox" id="check" checked/>
+                            <label for="check">Checkbox Active </label>
+                        </li>
+                        <input type="checkbox" class="inputs-checkbox" id="alter-checkbox"/>
+                        <label for="alter-checkbox">Checkbox</label>
+                    </ul>
+                    <ul class="inputs-ul">
+                        <li class="inputs-li"><input type="radio" class="inputs-radio" name="r" id="radio-active"
+                                                     checked/>
+                            <label for="radio-active">Radio Active</label></li>
+                        <li class="inputs-li"><input type="radio" class="inputs-radio" name="r" id="radio-active2"/>
+                            <label for="radio-active2">Radio Active</label></li>
+                    </ul>
+                    <ul class="inputs-ul">
+                        <li class="inputs-li">
+                            <input type="checkbox" class="inputs-switch" id="checkbox" checked/>
+                            <label for="checkbox">Switcher ON </label>
+                        </li>
+                        <li class="inputs-li">
+                            <input type="checkbox" class="inputs-switch" id="checkbox_off"/>
+                            <label for="checkbox_off">Switcher OFF </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title-wrapper">
+                    <h2>Star rating</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="rating1">
+                    <div class="rating-wrapper">
+                        <div class="feedback">
+                            <div class="rating">
+                                <span>Check rating</span>
+                                <input type="radio" name="rating" id="first-rating-5">
+                                <label for="first-rating-5"></label>
+                                <input type="radio" name="rating" id="first-rating-4">
+                                <label for="first-rating-4"></label>
+                                <input type="radio" name="rating" id="first-rating-3" checked>
+                                <label for="first-rating-3"></label>
+                                <input type="radio" name="rating" id="first-rating-2">
+                                <label for="first-rating-2"></label>
+                                <input type="radio" name="rating" id="first-rating-1">
+                                <label for="first-rating-1"></label>
+                            </div>
+                            <div class="rating">
+                                <span>Show rating</span>
+                                <input type="radio" name="variant-2" id="second-rating-5">
+                                <label for="second-rating-5"></label>
+                                <input type="radio" name="variant-2" id="second-rating-4">
+                                <label for="second-rating-4"></label>
+                                <input type="radio" name="variant-2" id="second-rating-3">
+                                <label for="second-rating-3"></label>
+                                <input type="radio" name="variant-2" id="second-rating-2">
+                                <label for="second-rating-2"></label>
+                                <input type="radio" name="variant-2" id="second-rating-1">
+                                <label for="second-rating-1"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div class="karusel">
+    <div class="owl-out">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="content-wrapper">
+                    <div class="img-wrapper">
+                        <img src="images/chubaka.jpg"/>
+                    </div>
+                    <div class="slider-text">
+                        <span>When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making one good choice at a Time</span>
+                        <h2>CHEWBACCA</h2>
+                        <h3>July 2017</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="content-wrapper">
+                    <div class="img-wrapper">
+                        <img src="images/chubaka.jpg"/>
+                    </div>
+                    <div class="slider-text">
+                        <span>When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making one good choice at a Time</span>
+                        <h2>CHEWBACCA</h2>
+                        <h3>July 2017</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="content-wrapper">
+                    <div class="img-wrapper">
+                        <img src="images/chubaka.jpg"/>
+                    </div>
+                    <div class="slider-text">
+                        <span>When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making one good choice at a Time</span>
+                        <h2>CHEWBACCA</h2>
+                        <h3>July 2017</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="content-wrapper">
+                    <div class="img-wrapper">
+                        <img src="images/chubaka.jpg"/>
+                    </div>
+                    <div class="slider-text">
+                        <span>When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making one good choice at a Time</span>
+                        <h2>CHEWBACCA</h2>
+                        <h3>July 2017</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thumbs">
+            <div class="div-owl">
+                <button class="thumb" role="button"><img src="images/chubaka.jpg"/></button>
+                <button class="thumb" role="button"><img src="images/chubaka.jpg"/></button>
+                <button class="thumb" role="button"><img src="images/chubaka.jpg"/></button>
+                <button class="thumb" role="button"><img src="images/chubaka.jpg"/></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="map-wrapper">
+    <div class="container-fluid">
+        <div class="map">
+            <div class="responsive-map">
+                <div class="invisible-block" id="map"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="full-footer">
+<div class="container">
+    <footer class="row footer">
+        <div class="col-lg-10 footer-list-wrapper order-2 order-md-2 order-lg-1">
+            <ul class="col-lg-4 col-md-4 order-1 show-menu">
+                <li class="title"><a href="#">Shop</a></li>
+                <ul class="show-hide-menu">
+                    <li>Browse by holiday</li>
+                    <li>Browse by Brand</li>
+                    <li>Gift of the Month Clubs</li>
+                    <li>Customized Bottles</li>
+                    <li>Corporate Gifts</li>
+                </ul>
+            </ul>
+
+            <ul class="col-lg-4 col-md-4 order-2 show-menu">
+                <li class="title"><a href="#">About</a></li>
+                <ul class="show-hide-menu">
+                    <li>About Spirited Gifts</li>
+                    <li>Read our Blog</li>
+                    <li>About our Selection</li>
+                    <li>Read our Reviews</li>
+                    <li>Shipping & Returns</li>
+                </ul>
+            </ul>
+
+            <ul class="col-lg-4 col-md-4 order-3 show-menu">
+                <li class="title"><a href="#">More</a></li>
+                <ul class="show-hide-menu">
+                    <li>Privacy Policy</li>
+                    <li>Retailer Network</li>
+                    <li>Help and FAQs</li>
+                    <li>Scholarship</li>
+                    <li>Contact Us</li>
+                </ul>
+            </ul>
+        </div>
+        <div class="col-lg-2 col-md-12 order-lg-last order-1 order-md-1 order-lg-2">
+            <div class="list-wrapper">
+                <ul>
+                    <li class="follow"><a href="#">Follow us</a></li>
+                    <ul class="share">
+                        <li class="social"><a class="social" target="_blank"
+                                              href="https://www.facebook.com/"><i
+                                class="fab fa-facebook-square"></i></a>
+                        </li>
+                        <li class="social"><a target="_blank" href="https://twitter.com/"></a><i
+                                class="fab fa-twitter-square"></i></li>
+                        <li class="social"><a target="_blank" href="https://www.instagram.com/"></a><i
+                                class="fab fa-instagram-square"></i>
+                        </li>
+                        <li class="social"><a target="_blank" href="https://www.pinterest.com/"></a><i
+                                class="fab fa-pinterest-square"></i></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+</div>
+
+<link rel="stylesheet" href="css/style.css">
+
+<script src="/node_modules/mediaCheck/js/mediaCheck-min.js"></script>
+<script src="/node_modules/jquery/dist/jquery.js"></script>
+
+
+<script src="javaScript/script.js"></script>
+<script src="node_modules/owl.carousel/dist/owl.carousel.js"></script>
+
+
+</body>
+</html>
