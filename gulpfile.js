@@ -5,13 +5,23 @@ const sourcemaps = require('gulp-sourcemaps');
 const path = require('path');
 const del = require('del');
 const browserSync = require('browser-sync');
-var uglify = require('gulp-uglify');
-var pipeline = require('readable-stream').pipeline;
+var concat = require('gulp-concat');
 
-var ghPages = require('gulp-gh-pages');
+
+
 
 const pathLess = './less/*.less';
-const pathCss = './css';
+const pathCss = './build/css';
+const Jsfiles = [
+    './javaScript/map.js',
+    './node_modules/jquery/dist/jquery.js',
+    './node_modules/mediaCheck/js/mediaCheck-min.js',
+    './node_modules/owl.carousel/dist/owl.carousel.js',
+    './javaScript/script.js',
+];
+
+
+
 
 function less() {
     return gulp.src(pathLess)
@@ -42,18 +52,20 @@ function clean() {
     return del(['css/*'])
 }
 
+function scripts() {
+    return  gulp.src(Jsfiles)
+        .pipe(concat('all.js'))
+        .pipe(gulp.dest('./build/js'))
+}
 
-gulp.task('compress', function () {
-    return pipeline(
-        gulp.src('lib/*.js'),
-        uglify(),
-        gulp.dest('dist')
-    );
-});
-gulp.task('deploy', function() {
-    return gulp.src('./build/**/*')
-        .pipe(ghPages());
-});
+
+
+
+
+
+
+
 gulp.task('less', less);
 gulp.task('watch', watch);
 gulp.task('build', gulp.series(clean, less))
+gulp.task('scripts', scripts);

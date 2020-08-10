@@ -107,7 +107,7 @@ html {
 
         .inputs-li {
             list-style: none;
-            color: @color-black;
+            color: @black;
             margin: 0;
         }
 
@@ -341,7 +341,7 @@ html {
 
             &:hover {
                 cursor: pointer;
-                color: @twitter-color;
+                color: @blue;
             }
         }
 
@@ -358,14 +358,6 @@ html {
             .lib-font-size(@font-size__s);
             cursor: pointer;
             line-height: 31px;
-            //&:hover {
-            //    text-shadow: 0 0 .65px @black, 0 0 .65px @black;
-            //}
-            //
-            //&:first-child {
-            //    text-shadow: 0 0 .65px @black, 0 0 .65px @black;
-            //    color: @primary__color1;
-            //}
         }
     }
 }
@@ -485,9 +477,7 @@ html {
     .footer {
         .lib-css(flex-direction, column);
         background-color: @color-solitude;
-        //.show-hide-menu {
-        //    display: none;
-        //}
+
         .list-wrapper {
             ul {
                 li {
@@ -614,7 +604,7 @@ html {
             .lib-css(flex-direction, row, 1);
 
             .list-li {
-                padding: 15px 43px;
+                padding: 15px @indent__m;
             }
         }
     }
