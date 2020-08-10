@@ -13,10 +13,10 @@ var concat = require('gulp-concat');
 const pathLess = './less/*.less';
 const pathCss = './build/css';
 const Jsfiles = [
-    './javaScript/map.js',
     './node_modules/jquery/dist/jquery.js',
-    './node_modules/mediaCheck/js/mediaCheck-min.js',
+    './javaScript/map.js',
     './node_modules/owl.carousel/dist/owl.carousel.js',
+    './node_modules/mediaCheck/js/mediaCheck-min.js',
     './javaScript/script.js',
 ];
 
