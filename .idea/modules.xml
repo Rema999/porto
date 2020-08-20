@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/AwsTest.iml" filepath="$PROJECT_DIR$/.idea/AwsTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/porto.iml" filepath="$PROJECT_DIR$/.idea/porto.iml" />
     </modules>
   </component>
 </project>

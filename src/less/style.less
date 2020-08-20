@@ -1,0 +1,382 @@
+@import "src/less/import/import.less";
+
+.hidden {
+    display: none;
+    font-size: 20px;
+    color: @color-light-green;
+}
+
+.header {
+    background-color: @color-dark-grey;
+
+    .header-wrapper {
+        .lib-css(display, flex, 1);
+        .lib-css(justify-content, center, 1);
+        .lib-css(align-items, center, 1);
+
+        .hours {
+            width: 50%;
+
+            img {
+                height: 40px;
+            }
+        }
+
+        .login {
+            .lib-css(display, flex, 1);
+            .lib-css(align-items, center, 1);
+
+            .login-button {
+                border-radius: 5px;
+                border: none;
+                background: linear-gradient(0deg, rgba(140, 199, 72, 1) 35%, rgba(138, 204, 178, 1) 72%);
+                color: @color-white;
+                padding: @indent__xs;
+                margin-right: @indent__base;
+            }
+
+            .login-span {
+                color: @color-white;
+            }
+
+            img {
+                height: 40px;
+            }
+        }
+    }
+}
+
+.menu {
+    .lib-css(display, flex, 1);
+    .lib-css(align-items, center, 1);
+    .lib-css(justify-content, space-around, 1);
+    .lib-css(flex-wrap, wrap-reverse, 1);
+    max-width: 1024px;
+    margin: @indent__s auto;
+
+    .menu-logo {
+        img {
+            height: 60px;
+        }
+    }
+
+    .search {
+        padding: @indent__l 0;
+
+        .form {
+            .lib-css(display, flex, 1);
+            position: relative;
+        }
+
+        .search-field {
+            padding: @indent__xs 0 @indent__xs @indent__l;
+            border-radius: 6px 0 0 6px;
+            border: 1px solid @color-light-blue;
+            border-right: hidden;
+        }
+
+        .menu-search {
+            position: absolute;
+            top: 10px;
+            transform: scaleX(-1);
+            padding-right: @indent__s;
+            font-size: 11px;
+        }
+
+        .menu-button {
+            background-color: @color-light-green;
+            border-radius: 0 6px 6px 0;
+            border: none;
+            color: @color-white;
+        }
+    }
+
+    .help {
+        .lib-css(display, flex, 1);
+        .lib-css(align-items, center, 1);
+
+        .help-logo {
+            img {
+                height: 30px;
+                padding-top: @indent__xs;
+                padding-right: @indent__xs;
+            }
+        }
+
+        .telefon {
+            .answer {
+                margin: 0;
+
+                .span-answer {
+                    color: @color-light-green;
+                    font-size: 20px;
+                }
+            }
+
+            .working-time {
+                margin: 0;
+                color: @color-grey;
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+.nav {
+    background-color: @color-nav;
+
+    .nav-ul {
+        .lib-css(display, flex, 1);
+        .lib-css(align-items, center, 1);
+        .lib-css(justify-content, center, 1);
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        .nav-li {
+            text-transform: uppercase;
+            padding: 15px 0;
+            width: 14.25%;
+            text-align: center;
+
+            a {
+                text-decoration: none;
+                color: @color-black;
+                font-weight: bold;
+                font-size: 11px;
+            }
+
+            &:hover {
+                background-color: @color-dark-grey;
+
+                a {
+                    color: @color-white;
+                }
+            }
+        }
+    }
+}
+
+.main {
+    .lib-css(display, flex, 1);
+    .lib-css(flex-direction, column, 1);
+    .lib-css(justify-content, center, 1);
+    .lib-css(align-items, center, 1);
+    text-align: center;
+
+    .main-h2 {
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .connect {
+        position: relative;
+
+        img {
+            height: 220px;
+            position: absolute;
+            right: 285px;
+            top: 48px;
+        }
+    }
+
+    .main-p {
+        max-width: 550px;
+        margin: 0 0 15px 0;
+        padding: 0 15px;
+    }
+
+    .social {
+        .social-ul {
+            .lib-css(display, flex, 1);
+            .lib-css(justify-content, center, 1);
+            .lib-css(flex-wrap, wrap, 1);
+            padding: 0;
+            list-style: none;
+
+            img {
+                width: 200px;
+            }
+        }
+
+        .social-li {
+            font-size: 45px;
+
+            &:nth-child(2) {
+                padding: 0 @indent__xs 0 15px;
+            }
+
+            a {
+                color: @color-light-green;
+            }
+        }
+    }
+}
+
+.slider-wrapper {
+    max-width: 1024px;
+    margin: @indent__base auto;
+
+    .item {
+        height: 30px;
+        position: relative;
+        z-index: 10;
+
+        img {
+            display: inline-block;
+            height: auto;
+            width: auto;
+            max-height: 100%;
+            max-width: 100%;
+            margin: auto;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 20;
+        }
+    }
+}
+
+.footer {
+    background-color: @color-dark-grey;
+
+    .footer-top {
+        .lib-css(display, flex, 1);
+        .lib-css(flex-wrap, wrap, 1);
+        .lib-css(justify-content, center, 1);
+        padding: 0 100px;
+
+        .footer-ul {
+            list-style: none;
+            width: 20%;
+            min-width: 220px;
+            margin: @indent__m auto;
+
+            .footer-li {
+                color: @color-white;
+                font-size: 12px;
+                padding-bottom: @indent__s;
+
+                &:nth-child(1) {
+                    text-transform: uppercase;
+                    padding-bottom: 15px;
+                    font-size: 15px;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: @color-white;
+                }
+
+                .letter {
+                    padding-right: @indent__xs;
+                }
+            }
+
+            .footer-span {
+                display: block;
+                max-width: 200px;
+            }
+
+            .footer-form {
+                position: relative;
+
+                .footer-search {
+                    width: 55%;
+                    min-width: 170px;
+                    background-color: inherit;
+                    border: 1px solid @color-light-green;
+                    color: @color-light-grey;
+                    padding: @indent__xs;
+                    border-radius: @indent__xs;
+                }
+
+                .tel {
+                    position: absolute;
+                    top: 4px;
+                    left: 160px;
+                    font-size: 15px;
+                }
+            }
+
+            .footer-social {
+                .footer-img {
+                    width: 115px;
+                }
+
+                a {
+                    text-decoration: none;
+                    font-size: 25px;
+                    color: @color-white;
+
+                    .footer-i {
+                        padding: 0 @indent__s;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        background-color: @color-light-green;
+        padding: @indent__xs;
+        color: @color-white;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .hidden {
+        display: block;
+    }
+
+    .menu {
+        .lib-css(flex-direction, column-reverse, 1);
+
+        .menu-logo {
+            .lib-css(display, flex, 1);
+            .lib-css(align-items, center, 1);
+            order: 1;
+
+            img {
+                height: 40px;
+                padding: 0 @indent__base;
+            }
+
+            padding: @indent__s 0;
+        }
+
+        .help {
+            order: 2;
+        }
+
+        .search {
+            padding: 0;
+        }
+    }
+
+    .nav {
+        .nav-ul {
+            .lib-css(flex-direction, column, 1);
+            .lib-css(align-items, flex-start, 1);
+
+            .nav-li {
+                padding: @indent__xs 0 @indent__xs 15px;
+                width: 100%;
+                text-align: left;
+                border-bottom: 1px solid @color-white;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer {
+        .footer-top {
+            .footer-ul {
+                min-width: 160px
+            }
+        }
+    }
+}

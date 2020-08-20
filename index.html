@@ -4,305 +4,168 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeQqYyErm-SVqNMxbatDsDR7lhyP8YU0A&callback=initMap&libraries=&v=weekly"
-            defer
-    ></script>
 </head>
 <body>
 
-<div class="header">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-6">
-                <div class="tablet-menu">
-                    <div class="burger"><p class="open-list"><i class="fas fa-bars"></i></p></div>
-                    <div class="cross"><p class="close-list none"><i class="fas fa-times"></i></p></div>
-                    <div class="image-wrapper"><img src="images/logo.jpg" class="img-logo"></div>
-                    <div class="search-mobile">
-                        <span class="open-search"><i class="fas fa-search"></i></span>
-                        <span class="close-search"><i class="fas fa-times"></i></span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 ">
-                <div class="hide-form">
-                    <form action="#" class="form">
-                        <input class="search-field" type="text" placeholder="Search...">
-                        <div class="search">
-                            <i class="fas fa-search"></i>
-                        </div>
-                    </form>
-                </div>
-            </div>
+<header class="header">
+    <div class="header-wrapper">
+        <div class="hours">
+            <img src="./src/images/24.png" alt="" class="header-img">
+        </div>
+        <div class="login">
+            <button class="login-button">Inloggen</button>
+            <span class="login-span">Winkelwagen</span>
+            <img src="./src/images/basket.png" alt="" class="login-img">
+        </div>
+    </div>
+</header>
+<div class="menu">
+    <div class="menu-logo">
+        <i class="fas fa-bars hidden burger"></i>
+        <img src="./src/images/logo.png" alt="">
+        <i class="fas fa-search hidden loop"></i>
+    </div>
+    <div class="search">
+        <form action="#" class="form">
+            <input class="search-field" type="text" placeholder="Zoek in het assortiment ">
+            <i class="fas fa-search menu-search"></i>
+            <button class="menu-button">Zoeken</button>
+        </form>
+    </div>
+    <div class="help">
+        <div class="help-logo"><img src="./src/images/telefon.png" alt="" class="help-img"></div>
+        <div class="telefon">
+            <p class="answer">Heeft u vragen? <span class="span-answer">Bel 0512-745293</span></p>
+            <p class="working-time">Bereikbaar maandag t/m vrijdag van: 09:00 – 17:00</p>
         </div>
     </div>
 </div>
-<nav class="navigation">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12 col-md-12">
-                <ul class="list tablet-list">
-                    <li class="list-li home">home</li>
-                    <li class="list-li services">services</li>
-                    <li class="list-li portfolio">portfolio</li>
-                    <li class="list-li gallery">gallery</li>
-                    <li class="list-li help">help & faq</li>
-                    <li class="list-li about">about</li>
-                    <li class="list-li danger">contact</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+<nav class="nav">
+    <ul class="nav-ul">
+        <li class="nav-li"><a href="#">portofoons</a></li>
+        <li class="nav-li"><a href="#">accessoires</a></li>
+        <li class="nav-li"><a href="#">zendontvangers</a></li>
+        <li class="nav-li"><a href="#">antennes & toebehoren</a></li>
+        <li class="nav-li"><a href="#">contact</a></li>
+        <li class="nav-li"><a href="#">samrtportofoon</a></li>
+        <li class="nav-li"><a href="#">nieuws</a></li>
+    </ul>
 </nav>
-
 <main class="main">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="title-wrapper">
-                    <h2>Buttons</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="buttons-wrapper">
-                    <button type="button" class="btn btn-primary all-buttons">Primary</button>
-                    <button type="button" class="btn btn-outline-primary all-buttons">Default</button>
-                    <button type="button" class="btn btn-success all-buttons">Success</button>
-                    <button type="button" class="btn btn-info all-buttons">Info</button>
-                    <button type="button" class="btn btn-warning all-buttons">Warning</button>
-                    <button type="button" class="btn btn-danger all-buttons">Danger</button>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="title-wrapper">
-                    <h2>Inputs</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="inputs">
-                    <ul class="inputs-ul">
-                        <li class="inputs-li">
-                            <input type="checkbox" class="inputs-checkbox" id="check" checked/>
-                            <label for="check">Checkbox Active </label>
-                        </li>
-                        <input type="checkbox" class="inputs-checkbox" id="alter-checkbox"/>
-                        <label for="alter-checkbox">Checkbox</label>
-                    </ul>
-                    <ul class="inputs-ul">
-                        <li class="inputs-li"><input type="radio" class="inputs-radio" name="r" id="radio-active"
-                                                     checked/>
-                            <label for="radio-active">Radio Active</label></li>
-                        <li class="inputs-li"><input type="radio" class="inputs-radio" name="r" id="radio-active2"/>
-                            <label for="radio-active2">Radio Active</label></li>
-                    </ul>
-                    <ul class="inputs-ul">
-                        <li class="inputs-li">
-                            <input type="checkbox" class="inputs-switch" id="checkbox" checked/>
-                            <label for="checkbox">Switcher ON </label>
-                        </li>
-                        <li class="inputs-li">
-                            <input type="checkbox" class="inputs-switch" id="checkbox_off"/>
-                            <label for="checkbox_off">Switcher OFF </label>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="title-wrapper">
-                    <h2>Star rating</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="rating1">
-                    <div class="rating-wrapper">
-                        <div class="feedback">
-                            <div class="rating">
-                                <span>Check rating</span>
-                                <input type="radio" name="rating" id="first-rating-5">
-                                <label for="first-rating-5"></label>
-                                <input type="radio" name="rating" id="first-rating-4">
-                                <label for="first-rating-4"></label>
-                                <input type="radio" name="rating" id="first-rating-3" checked>
-                                <label for="first-rating-3"></label>
-                                <input type="radio" name="rating" id="first-rating-2">
-                                <label for="first-rating-2"></label>
-                                <input type="radio" name="rating" id="first-rating-1">
-                                <label for="first-rating-1"></label>
-                            </div>
-                            <div class="rating">
-                                <span>Show rating</span>
-                                <input type="radio" name="variant-2" id="second-rating-5">
-                                <label for="second-rating-5"></label>
-                                <input type="radio" name="variant-2" id="second-rating-4">
-                                <label for="second-rating-4"></label>
-                                <input type="radio" name="variant-2" id="second-rating-3">
-                                <label for="second-rating-3"></label>
-                                <input type="radio" name="variant-2" id="second-rating-2">
-                                <label for="second-rating-2"></label>
-                                <input type="radio" name="variant-2" id="second-rating-1">
-                                <label for="second-rating-1"></label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="connect">
+        <img src="./src/images/connect.png" alt="">
+    </div>
+    <h1 class="main-h1">Bedankt voor uw bestelling bij PortofoonWEB!</h1>
+    <h2 class="main-h2">Goed om te weten</h2>
+    <p class="main-p">
+        Bent u tevreden over het bestelproces like dan onze Facebook pagina of laat een review achter,
+        zo maakt u ook nog eens kans op een leuke cadeau bon ter waarde van € 100,- Wilt u graag op de
+        hoogte blijven van het laatste nieuws en speciale aanbiedingen meld u zich dan aan op onze nieuwsbrief.
+    </p>
+    <h2 class="main-h2">Wat gaat er nu gebeuren?</h2>
+    <p class="main-p">
+        Per email heeft u een bevestiging ontvangen van uw bestelling met Ordernummer [ordernummer].
+        Heeft u de bestelling op een werkdag voor 17:00 gedaan en betaald, dan gaan wij nu direct aan
+        de slag om te zorgen dat u het morgen in huis heeft. Heeft u vragen over de bestelling neem dan
+        contact met ons op 0512 – 745293 of stuur ons een email aan info@portofoonweb.nl.
+    </p>
+    <h2 class="main-h2">Wist u dat?</h2>
+    <p class="main-p">
+        PortofoonWEB heeft sinds kort een fenomenaal nieuwe techniek genaamd Smart Portofoons.
+        Een portofoon systeem met ongekende mogelijkheden en onbeperkt bereik!
+        Klik op deze link voor meer informatie.
+    </p>
+    <div class="social">
+        <ul class="social-ul">
+            <li class="social-li"><img src="./src/images/smart.png" alt=""></li>
+            <li class="social-li">
+                <a target="_blank" href="https://www.facebook.com/">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+            </li>
+            <li class="social-li">
+                <a target="_blank" href="https://twitter.com/">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+
+            </li>
+        </ul>
     </div>
 </main>
-
-<div class="karusel">
-    <div class="owl-out">
-        <div class="owl-carousel owl-theme">
-            <div class="item">
-                <div class="content-wrapper">
-                    <div class="img-wrapper">
-                        <img src="images/chubaka.jpg"/>
-                    </div>
-                    <div class="slider-text">
-                        <span>When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making one good choice at a Time</span>
-                        <h2>CHEWBACCA</h2>
-                        <h3>July 2017</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="content-wrapper">
-                    <div class="img-wrapper">
-                        <img src="images/chubaka.jpg"/>
-                    </div>
-                    <div class="slider-text">
-                        <span>When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making one good choice at a Time</span>
-                        <h2>CHEWBACCA</h2>
-                        <h3>July 2017</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="content-wrapper">
-                    <div class="img-wrapper">
-                        <img src="images/chubaka.jpg"/>
-                    </div>
-                    <div class="slider-text">
-                        <span>When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making one good choice at a Time</span>
-                        <h2>CHEWBACCA</h2>
-                        <h3>July 2017</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="content-wrapper">
-                    <div class="img-wrapper">
-                        <img src="images/chubaka.jpg"/>
-                    </div>
-                    <div class="slider-text">
-                        <span>When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making one good choice at a Time</span>
-                        <h2>CHEWBACCA</h2>
-                        <h3>July 2017</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="thumbs">
-            <div class="div-owl">
-                <button class="thumb" role="button"><img src="images/chubaka.jpg"/></button>
-                <button class="thumb" role="button"><img src="images/chubaka.jpg"/></button>
-                <button class="thumb" role="button"><img src="images/chubaka.jpg"/></button>
-                <button class="thumb" role="button"><img src="images/chubaka.jpg"/></button>
-            </div>
-        </div>
+<div class="slider-wrapper">
+    <div class="owl-carousel">
+        <div class="item"><img src="./src/images/motorola.png" alt=""></div>
+        <div class="item"><img src="./src/images/baofeng.png" alt=""></div>
+        <div class="item"><img src="./src/images/icom.png" alt=""></div>
+        <div class="item"><img src="./src/images/kenwood.png" alt=""></div>
+        <div class="item"><img src="./src/images/hytera.png" alt=""></div>
     </div>
 </div>
-<div class="map-wrapper">
-    <div class="container-fluid">
-        <div class="map">
-            <div class="responsive-map">
-                <div class="invisible-block" id="map"></div>
-            </div>
-        </div>
+<footer class="footer">
+    <div class="footer-top">
+        <ul class="footer-ul">
+            <li class="footer-li">Contactgegevens</li>
+            <li class="footer-li">PortofoonWEB</li>
+            <li class="footer-li">Zonnedauw 16 9202 PA Drachten</li>
+            <li class="footer-li"><i class="fas fa-phone-alt"></i> 0512 - 745 293</li>
+            <li class="footer-li"><a href="" class="footer-a"> <i class="far fa-envelope letter"></i>info@portofoonweb.nl</a>
+            </li>
+            <li class="footer-li">K.v.K nr: 62061712</li>
+            <li class="footer-li">BTW nr: NL854624624B01</li>
+        </ul>
+        <ul class="footer-ul">
+            <li class="footer-li">KLANTENSERVICE</li>
+            <li class="footer-li"><a href="" class="footer-a">Contact</a></li>
+            <li class="footer-li"><a href="" class="footer-a">Over PortofoonWEB</a></li>
+            <li class="footer-li"><a href="" class="footer-a">Offerte aanvraag</a></li>
+            <li class="footer-li"><a href="" class="footer-a">Defect en Retour</a></li>
+            <li class="footer-li"><a href="" class="footer-a">Garantie</a></li>
+            <li class="footer-li"><a href="" class="footer-a">Veelgestelde vragen</a></li>
+            <li class="footer-li"><a href="" class="footer-a">B2B</a></li>
+        </ul>
+        <ul class="footer-ul">
+            <li class="footer-li">ALGEMENE INFORMATIE</li>
+            <li class="footer-li"><a href="" class="footer-a">Portofoons</a></li>
+            <li class="footer-li"><a href="" class="footer-a">Toepassingen</a></li>
+            <li class="footer-li"><a href="" class="footer-a">Algemene voorwaarden</a></li>
+            <li class="footer-li"><a href="" class="footer-a">Betalen en Verzenden</a></li>
+            <li class="footer-li"><a href="" class="footer-a">Privacy en Cookies</a></li>
+            <li class="footer-li"><a href="" class="footer-a">Disclaimer</a></li>
+        </ul>
+        <ul class="footer-ul">
+            <li class="footer-li">NIEUWSBRIEF</li>
+            <li class="footer-li">
+                <span class="footer-span">Wilt u op de hoogte gehouden worden van de nieuwste Technieken &
+                Aanbiedingen op het gebied van Portofoons?
+                </span>
+            </li>
+            <li class="footer-li">
+                <form action="#" class="footer-form">
+                    <input class="footer-search" type="text" placeholder="uw emailadres... ">
+                    <i class="fab fa-telegram-plane tel"></i>
+                </form>
+            </li>
+            <li class="footer-social">
+                <img src="./src/images/little-smart.png" alt="" class="footer-img">
+                <a target="_blank" href="https://www.facebook.com/">
+                    <i class="fab fa-facebook-square footer-i"></i>
+                </a>
+                <a target="_blank" href="https://twitter.com/">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+            </li>
+        </ul>
     </div>
-</div>
+    <div class="footer-bottom">
+        <span>©Portofoonweb.nl 2017 All rights reserved.</span>
+    </div>
+</footer>
 
-<div class="full-footer">
-<div class="container">
-    <footer class="row footer">
-        <div class="col-lg-10 footer-list-wrapper order-2 order-md-2 order-lg-1">
-            <ul class="col-lg-4 col-md-4 order-1 show-menu">
-                <li class="title"><a href="#">Shop</a></li>
-                <ul class="show-hide-menu">
-                    <li>Browse by holiday</li>
-                    <li>Browse by Brand</li>
-                    <li>Gift of the Month Clubs</li>
-                    <li>Customized Bottles</li>
-                    <li>Corporate Gifts</li>
-                </ul>
-            </ul>
-
-            <ul class="col-lg-4 col-md-4 order-2 show-menu">
-                <li class="title"><a href="#">About</a></li>
-                <ul class="show-hide-menu">
-                    <li>About Spirited Gifts</li>
-                    <li>Read our Blog</li>
-                    <li>About our Selection</li>
-                    <li>Read our Reviews</li>
-                    <li>Shipping & Returns</li>
-                </ul>
-            </ul>
-
-            <ul class="col-lg-4 col-md-4 order-3 show-menu">
-                <li class="title"><a href="#">More</a></li>
-                <ul class="show-hide-menu">
-                    <li>Privacy Policy</li>
-                    <li>Retailer Network</li>
-                    <li>Help and FAQs</li>
-                    <li>Scholarship</li>
-                    <li>Contact Us</li>
-                </ul>
-            </ul>
-        </div>
-        <div class="col-lg-2 col-md-12 order-lg-last order-1 order-md-1 order-lg-2">
-            <div class="list-wrapper">
-                <ul>
-                    <li class="follow"><a href="#">Follow us</a></li>
-                    <ul class="share">
-                        <li class="social"><a class="social" target="_blank"
-                                              href="https://www.facebook.com/"><i
-                                class="fab fa-facebook-square"></i></a>
-                        </li>
-                        <li class="social"><a target="_blank" href="https://twitter.com/"></a><i
-                                class="fab fa-twitter-square"></i></li>
-                        <li class="social"><a target="_blank" href="https://www.instagram.com/"></a><i
-                                class="fab fa-instagram-square"></i>
-                        </li>
-                        <li class="social"><a target="_blank" href="https://www.pinterest.com/"></a><i
-                                class="fab fa-pinterest-square"></i></li>
-                    </ul>
-                </ul>
-            </div>
-        </div>
-    </footer>
-</div>
-</div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
 <link rel="stylesheet" href="./build/css/style.css">
-<!--<link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.css">-->
-<!--<link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.css">-->
 <script src="./build/js/all.js"></script>
-
-
 
 </body>
 </html>
