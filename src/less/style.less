@@ -1,5 +1,12 @@
 @import "src/less/import/import.less";
-
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body{
+    height: 100%;
+}
 .hidden {
     display: none;
     font-size: 20px;
@@ -49,9 +56,8 @@
 .menu {
     .lib-css(display, flex, 1);
     .lib-css(align-items, center, 1);
-    .lib-css(justify-content, space-around, 1);
+    .lib-css(justify-content, space-evenly, 1);
     .lib-css(flex-wrap, wrap-reverse, 1);
-    max-width: 1024px;
     margin: @indent__s auto;
 
     .menu-logo {
@@ -88,6 +94,7 @@
             border-radius: 0 6px 6px 0;
             border: none;
             color: @color-white;
+            padding: 0 @indent__xs;
         }
     }
 
@@ -160,9 +167,9 @@
 .main {
     .lib-css(display, flex, 1);
     .lib-css(flex-direction, column, 1);
-    .lib-css(justify-content, center, 1);
     .lib-css(align-items, center, 1);
     text-align: center;
+    min-height: 100%;
 
     .main-h2 {
         font-size: 15px;
@@ -214,8 +221,7 @@
 }
 
 .slider-wrapper {
-    max-width: 1024px;
-    margin: @indent__base auto;
+    margin: @indent__base 50px;
 
     .item {
         height: 30px;
@@ -283,7 +289,7 @@
                 position: relative;
 
                 .footer-search {
-                    width: 55%;
+                    width: 170px;;
                     min-width: 170px;
                     background-color: inherit;
                     border: 1px solid @color-light-green;
